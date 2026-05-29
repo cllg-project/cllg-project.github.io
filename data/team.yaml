@@ -1,0 +1,24 @@
+- name: "Thibault Clérice"
+  role: "Project Lead"
+  photo: "/images/thibault.jpeg"
+  url: "https://github.com/PonteIneptique"
+
+- name: "Benoit Sagot"
+  role: "Researcher"
+  photo: "/images/benoit.jpg"
+  url: ""
+
+- name: "Nicolas Angleraud"
+  role: "AI Vision Engineer"
+  photo: "/images/nicolas.jpg"
+  url: ""
+
+- name: "Antonia Karamolengou"
+  role: "Data Librarian & NLP Engineer"
+  photo: "/images/antonia.jpeg"
+  url: ""
+
+- name: "Maïna Laurent"
+  role: "Intern"
+  photo: "/images/maina.jpg"
+  url: ""

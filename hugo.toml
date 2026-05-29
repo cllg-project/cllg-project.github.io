@@ -1,0 +1,18 @@
+baseURL = "https://cllg-project.github.io/"
+languageCode = "en-us"
+title = "CLLG — Corpus Liberatum Linguae Graecae"
+
+[params]
+  description = "An open-science initiative for freely accessible ancient Greek texts via a complete pipeline from scanned editions to structured TEI XML."
+  tagline = "Liberating ancient Greek texts"
+  github_org = "https://github.com/CLLG"
+  gitlab_freed = "https://gitlab.inria.fr/almanach/cllg/freed-corpus"
+  huggingface_org = "https://huggingface.co/CLLG"
+  huggingface_models = "https://huggingface.co/CLLG/models"
+  huggingface_datasets = "https://huggingface.co/CLLG/datasets"
+  anr_grant = "ANR-24-RRII-0002"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,26 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <strong>CLLG</strong> — Corpus Liberatum Linguæ Graecæ
+        <p>Supported by ANR France 2030 grant <strong>{{ .Site.Params.anr_grant }}</strong>, Inria Quadrant Program.</p>
+      </div>
+      <div class="footer-affiliation">
+        <p class="footer-affil-label">A project of</p>
+        <a href="https://almanach.inria.fr/index-en.html" target="_blank" rel="noopener" class="footer-affil-link">
+          <img src="/images/almanach-logo.png" alt="ALMAnaCH — Inria" class="footer-almanach-logo">
+          <span>ALMAnaCH — Inria Paris</span>
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="{{ .Site.Params.huggingface_org }}" target="_blank" rel="noopener">HuggingFace</a>
+        <a href="{{ .Site.Params.github_org }}" target="_blank" rel="noopener">GitHub</a>
+        <a href="{{ .Site.Params.gitlab_freed }}" target="_blank" rel="noopener">GitLab (Inria)</a>
+      </div>
+    </div>
+    <p class="footer-legal">
+      Built with <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+      Released under free licenses.
+    </p>
+  </div>
+</footer>

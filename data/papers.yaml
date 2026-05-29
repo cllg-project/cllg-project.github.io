@@ -1,0 +1,15 @@
+- title: "Structure-Aware Text Recognition for Ancient Greek Critical Editions"
+  authors: "Nicolas Angleraud, Antonia Karamolegkou, Benoît Sagot, Thibault Clérice"
+  year: 2026
+  venue: "arXiv preprint"
+  arxiv: "2603.02803"
+  url: "https://arxiv.org/abs/2603.02803"
+  abstract: "We investigate how visual language models perform on historical scholarly texts. We create a synthetic dataset of 185,000 pages from TEI/XML sources and a real-world benchmark of scanned critical editions. Qwen3VL-8B achieves 1.0% Character Error Rate on actual scans."
+
+- title: "Reading or Guessing? Visual Grounding Failures of Vision-Language Models for OCR in Ancient Greek Editions"
+  authors: "Antonia Karamolegkou, Nicolas Angleraud, Benoît Sagot, Thibault Clérice"
+  year: 2026
+  venue: "arXiv preprint"
+  arxiv: "2605.27750"
+  url: "https://arxiv.org/abs/2605.27750"
+  abstract: "We examine how VLMs perform OCR on ancient Greek texts and find they can generate plausible but visually unsupported text, relying on language priors rather than actual visual input. Fluent output is not necessarily visually grounded."

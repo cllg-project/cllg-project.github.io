@@ -1,0 +1,45 @@
+# Featured releases — shown prominently on the page
+featured:
+  - name: "FreED Corpus"
+    description: "The Freely Editable and Distributable Corpus for ancient Greek, released on GitLab under a free license. Structured TEI XML, covering prose texts with canonical references."
+    url: "https://gitlab.inria.fr/almanach/cllg/freed-corpus"
+    badge: "GitLab"
+    icon: "gitlab"
+
+# HuggingFace resources
+huggingface:
+  org_url: "https://huggingface.co/CLLG"
+  models:
+    label: "Models on HuggingFace"
+    url: "https://huggingface.co/CLLG/models"
+    description: "OCR and layout analysis models for ancient Greek and Latin texts."
+  datasets:
+    label: "Datasets on HuggingFace"
+    url: "https://huggingface.co/CLLG/datasets"
+    description: "Synthetic training dataset of ~185,000 pages generated from TEI/XML sources across 4,582 works with over 5,000 style combinations, plus real-world benchmarks of scanned critical editions."
+
+# Code repositories
+repositories:
+  - name: "CLLG on GitHub"
+    url: "https://github.com/CLLG"
+    description: "Source code, tools, and supporting repositories."
+    icon: "github"
+  - name: "CLLG on GitLab (Inria)"
+    url: "https://gitlab.inria.fr/almanach/cllg"
+    description: "Primary source code and corpus data hosted at Inria."
+    icon: "gitlab"
+
+# Software tools
+software:
+  - name: "MyDapytains"
+    url: "https://github.com/distributed-text-services/MyDapytains"
+    description: "A ready-to-deploy DTS (Distributed Text Services) API server built on TEI structure, enabling standard programmatic access to corpus texts."
+    icon: "github"
+  - name: "HookTest"
+    url: "https://github.com/cllg-project/hooktest"
+    description: "Validation tool for TEI XML files with CiteStructure encoding and DTS catalog registries. Allows automated testing and reference retrieval without human intervention."
+    icon: "github"
+  - name: "Kraken-JS"
+    url: "https://github.com/cllg-project/kraken-js"
+    description: "JavaScript runtime for Kraken OCR/HTR models, running on Node.js and Electron without requiring Python at inference time. Includes segmentation, recognition, and a full end-to-end pipeline with WebGPU/CUDA support."
+    icon: "github"

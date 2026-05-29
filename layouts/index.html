@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  {{ partial "nav.html" . }}
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-logo-wrap">
+        <img src="https://cdn-avatars.huggingface.co/v1/production/uploads/5e4529a416f9aa7f645b5056/5dfdARjnrsWFWaYrUdiCt.png" alt="CLLG" class="hero-logo">
+      </div>
+      <div class="hero-text">
+        <p class="hero-eyebrow">Open Science · Ancient Greek · NLP</p>
+        <h1 class="hero-title">
+          Corpus Liberatum<br>
+          <em>Linguæ Graecæ</em>
+        </h1>
+        <p class="hero-sub">{{ .Site.Params.description }}</p>
+        <div class="hero-cta">
+          <a href="#resources" class="btn btn-primary">Explore Resources</a>
+          <a href="#about" class="btn btn-ghost">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About the Project</h2>
+      <div class="prose">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources -->
+  <section class="section section-alt" id="resources">
+    <div class="container">
+      <h2 class="section-title">Resources</h2>
+      <p class="section-sub">All data and tools are released under free licenses.</p>
+
+      <!-- Featured corpus -->
+      {{ with .Site.Data.resources.featured }}
+      <div class="featured-grid">
+        {{ range . }}
+        <div class="featured-card">
+          <div class="featured-card-header">
+            {{ if eq .icon "gitlab" }}
+            <svg class="resource-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"/></svg>
+            {{ else if eq .icon "github" }}
+            <svg class="resource-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            {{ end }}
+            <span class="featured-badge featured-badge--{{ .icon }}">{{ .badge }}</span>
+          </div>
+          <h3>{{ .name }}</h3>
+          <p>{{ .description }}</p>
+          <a href="{{ .url }}" target="_blank" rel="noopener" class="btn btn-primary">View on {{ .badge }} →</a>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <!-- HuggingFace -->
+      <h3 class="subsection-title">HuggingFace</h3>
+      <div class="resource-grid">
+        {{ with .Site.Data.resources.huggingface }}
+        <a href="{{ .models.url }}" target="_blank" rel="noopener" class="resource-card">
+          <div class="resource-card-icon hf-icon">
+            <svg viewBox="0 0 95 88" fill="currentColor"><path d="M47.2 0C21.1 0 0 19.7 0 44c0 24.3 21.1 44 47.2 44 26.1 0 47.2-19.7 47.2-44C94.4 19.7 73.3 0 47.2 0zM47.2 80c-21 0-38-15.7-38-36s17-36 38-36 38 15.7 38 36-17 36-38 36z"/><path d="M34 44c0-4.4 2.7-8 6-8s6 3.6 6 8-2.7 8-6 8-6-3.6-6-8zm19 0c0-4.4 2.7-8 6-8s6 3.6 6 8-2.7 8-6 8-6-3.6-6-8z"/></svg>
+          </div>
+          <div>
+            <strong>{{ .models.label }}</strong>
+            <p>{{ .models.description }}</p>
+          </div>
+          <span class="resource-arrow">→</span>
+        </a>
+        <a href="{{ .datasets.url }}" target="_blank" rel="noopener" class="resource-card">
+          <div class="resource-card-icon hf-icon">
+            <svg viewBox="0 0 95 88" fill="currentColor"><path d="M47.2 0C21.1 0 0 19.7 0 44c0 24.3 21.1 44 47.2 44 26.1 0 47.2-19.7 47.2-44C94.4 19.7 73.3 0 47.2 0zM47.2 80c-21 0-38-15.7-38-36s17-36 38-36 38 15.7 38 36-17 36-38 36z"/><path d="M34 44c0-4.4 2.7-8 6-8s6 3.6 6 8-2.7 8-6 8-6-3.6-6-8zm19 0c0-4.4 2.7-8 6-8s6 3.6 6 8-2.7 8-6 8-6-3.6-6-8z"/></svg>
+          </div>
+          <div>
+            <strong>{{ .datasets.label }}</strong>
+            <p>{{ .datasets.description }}</p>
+          </div>
+          <span class="resource-arrow">→</span>
+        </a>
+        {{ end }}
+      </div>
+
+      <!-- Source Code -->
+      <h3 class="subsection-title">Source Code &amp; Data Repositories</h3>
+      <div class="resource-grid">
+        {{ range .Site.Data.resources.repositories }}
+        <a href="{{ .url }}" target="_blank" rel="noopener" class="resource-card">
+          <div class="resource-card-icon {{ .icon }}-icon">
+            {{ if eq .icon "github" }}
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            {{ else }}
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"/></svg>
+            {{ end }}
+          </div>
+          <div>
+            <strong>{{ .name }}</strong>
+            <p>{{ .description }}</p>
+          </div>
+          <span class="resource-arrow">→</span>
+        </a>
+        {{ end }}
+      </div>
+
+      <!-- Software -->
+      <h3 class="subsection-title">Software</h3>
+      <div class="resource-grid">
+        {{ range .Site.Data.resources.software }}
+        <a href="{{ .url }}" target="_blank" rel="noopener" class="resource-card">
+          <div class="resource-card-icon {{ .icon }}-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </div>
+          <div>
+            <strong>{{ .name }}</strong>
+            <p>{{ .description }}</p>
+          </div>
+          <span class="resource-arrow">→</span>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Papers -->
+  <section class="section" id="papers">
+    <div class="container">
+      <h2 class="section-title">Publications</h2>
+      <p class="section-sub">Research outputs from the CLLG project.</p>
+      <div class="papers-list">
+        {{ range .Site.Data.papers }}
+        <article class="paper-card">
+          <div class="paper-meta">
+            <span class="paper-year">{{ .year }}</span>
+            <span class="paper-venue">{{ .venue }}</span>
+            <a href="{{ .url }}" target="_blank" rel="noopener" class="paper-arxiv">arXiv:{{ .arxiv }}</a>
+          </div>
+          <h3 class="paper-title">
+            <a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>
+          </h3>
+          <p class="paper-authors">{{ .authors }}</p>
+          <p class="paper-abstract">{{ .abstract }}</p>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section section-alt" id="team">
+    <div class="container">
+      <h2 class="section-title">Team</h2>
+      <p class="section-sub">A multidisciplinary team at <a href="https://almanach.inria.fr/index-en.html" target="_blank" rel="noopener">ALMAnaCH</a>, Inria Paris — combining Natural Language Processing and Computational Humanities.</p>
+      <div class="team-grid">
+        {{ range .Site.Data.team }}
+        <div class="team-card">
+          <div class="team-photo-wrap">
+            <img src="{{ .photo }}" alt="{{ .name }}" class="team-photo" loading="lazy">
+          </div>
+          <div class="team-info">
+            <strong class="team-name">
+              {{ if .url }}
+              <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+              {{ else }}
+              {{ .name }}
+              {{ end }}
+            </strong>
+            <span class="team-role">{{ .role }}</span>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{ partial "footer.html" . }}
+</body>
+</html>

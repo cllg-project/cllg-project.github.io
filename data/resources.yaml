@@ -6,6 +6,25 @@ featured:
     badge: "GitLab"
     icon: "gitlab"
 
+  - name: "Sources Chrétiennes Corpus"
+    description: "A free CC-BY XML-TEI corpus of Ancient Greek texts derived from the Sources Chrétiennes series, with canonical citation structures. Dapytains-compatible and tested with HookTest."
+    url: "https://gitlab.inria.fr/almanach/cllg/sources-chretiennes"
+    badge: "GitLab"
+    icon: "gitlab"
+
+  - name: "CLLG-Scanner"
+    description: "A local desktop app that converts scanned Ancient Greek and Latin editions (PDF, DjVu, images, ALTO) into structured TEI XML, using Kraken OCR. Nothing leaves your machine. Apache-2.0."
+    url: "https://github.com/cllg-project/cllg-scanner"
+    demo: "https://cllg-project.github.io/cllg-scanner/"
+    badge: "GitHub"
+    icon: "github"
+
+  - name: "Ancient Greek Printed Dataset"
+    description: "Seven Ancient Greek printed documents (17th-21st century) with manually transcribed lines: 60 files, 2,113 lines and 69,351 characters. CC-BY 4.0."
+    url: "https://zenodo.org/records/22098097"
+    badge: "Zenodo"
+    icon: "zenodo"
+
 # HuggingFace resources
 huggingface:
   org_url: "https://huggingface.co/CLLG"

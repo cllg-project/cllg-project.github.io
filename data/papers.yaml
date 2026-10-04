@@ -13,3 +13,19 @@
   arxiv: "2605.27750"
   url: "https://arxiv.org/abs/2605.27750"
   abstract: "We examine how VLMs perform OCR on ancient Greek texts and find they can generate plausible but visually unsupported text, relying on language priors rather than actual visual input. Fluent output is not necessarily visually grounded."
+
+- title: "Adapting Small Language Models for Schema-Constrained TEI Document Encoding"
+  authors: "Nicolas Angleraud, Juliette Janes, Lucence Ing, Antonia Karamolegkou, Maïna Laurent, Benoît Sagot, Thibault Clérice"
+  year: 2026
+  venue: "HAL preprint"
+  hal: "hal-05732106"
+  url: "https://inria.hal.science/hal-05732106v1"
+  abstract: "We formulate TEI encoding as a schema-constrained document generation task and evaluate small open-source language models on French literary editions and Ancient Greek critical editions. Supervised adaptation raises TEI validity from 9.0% and 23.7% zero-shot to 97.3% and 99.3%, with adapted 0.6B models matching or exceeding much larger untuned models."
+
+- title: "From Editions to Training Data: Distant Supervision for Ancient Greek OCR and Cross-Architecture Evaluation"
+  authors: "Antonia Karamolegkou, Maïna Laurent, David A. Smith, Thibault Clérice"
+  year: 2026
+  venue: "HAL preprint"
+  hal: "hal-05732094"
+  url: "https://inria.hal.science/hal-05732094v1"
+  abstract: "We introduce CLLG-ACDC, a corpus of 838k line images automatically aligned with digital editions through distant supervision, plus two manually transcribed evaluation sets. Distant supervision substantially improves specialised OCR models and vision-language models, the strongest reaching 5.8-6.9% mean character error rate."

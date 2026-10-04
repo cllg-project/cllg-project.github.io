@@ -303,6 +303,17 @@ img { max-width: 100%; display: block; }
   background: rgba(36,41,46,.1);
   color: var(--github-dark);
 }
+.featured-card-header .resource-icon--github { color: var(--github-dark); }
+.featured-badge--zenodo {
+  background: rgba(26,115,232,.12);
+  color: #1a73e8;
+}
+.featured-card-header .resource-icon--zenodo { color: #1a73e8; }
+.featured-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+}
 
 .featured-card h3 {
   font-family: 'Playfair Display', serif;

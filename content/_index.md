@@ -15,7 +15,7 @@ The project operates along three major axes:
 
 - **Technological development** — OCR for polytonic Greek, layout analysis, and automatic TEI XML encoding.
 - **Corpus production** — High-quality, interoperable corpora structured in TEI XML, covering prose texts with canonical references.
-- **Open distribution** — All data and tools are released under free licenses and published via Nakala and GitLab.
+- **Open distribution** — All data and tools are released under free licenses and published via Nakala, GitLab, GitHub and Zenodo.
 
 ## Legal Context
 

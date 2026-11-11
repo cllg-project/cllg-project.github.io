@@ -1,16 +1,34 @@
 # Featured releases — shown prominently on the page
 featured:
-  - name: "FreED Corpus"
-    description: "The Freely Editable and Distributable Corpus for ancient Greek, released on GitLab under a free license. Structured TEI XML, covering prose texts with canonical references."
-    url: "https://gitlab.inria.fr/almanach/cllg/freed-corpus"
-    badge: "GitLab"
+  - name: "CLLG Freed Corpus"
+    description: "A corpus compiled from the TLG's CD-ROM E, with citeStructure and TEI encoding reworked to better align with the logical architecture of the texts. Page and line breaks of the printed volumes are encoded with pb and lb."
+    url: "https://freed-corpus-bae861.gitlabpages.inria.fr/"
+    badge: "GitLab Pages"
     icon: "gitlab"
 
-  - name: "Sources Chrétiennes Corpus"
-    description: "A free CC-BY XML-TEI corpus of Ancient Greek texts derived from the Sources Chrétiennes series, with canonical citation structures. Dapytains-compatible and tested with HookTest."
-    url: "https://gitlab.inria.fr/almanach/cllg/sources-chretiennes"
-    badge: "GitLab"
+  - name: "CLLG Sources Chrétiennes"
+    description: "The Greek corpus of the Sources Chrétiennes collection, in XML-TEI with canonical citation structures. Irenaeus is excluded: its mix of retroversions and fragments is not in the public domain under French law."
+    url: "https://sources-chretiennes-bd2dfb.gitlabpages.inria.fr/"
+    badge: "GitLab Pages"
     icon: "gitlab"
+
+  - name: "CLLG Nova"
+    description: "A corpus of XML-TEI texts produced within the CLLG project. Currently under development and expanded over time."
+    url: "https://cllg-nova-aa7b0d.gitlabpages.inria.fr/index.html"
+    badge: "GitLab Pages"
+    icon: "gitlab"
+
+  - name: "Polytonic Greek HTR Model"
+    description: "A Kraken/eScriptorium recognition model for diachronic polytonic Greek, with very high character-level accuracy, including on printed material with ligatures. Also available on the Inria eScriptorium instance."
+    url: "https://htrmopo.inria.fr/models/10.5281-zenodo.21295924/cllg-polytonic-greek-model-recognition"
+    badge: "HTRMoPo"
+    icon: "model"
+
+  - name: "Ancient Greek Printed Edition Segmentation Model"
+    description: "A Kraken segmentation model for printed editions of ancient Greek. It requires an upcoming Kraken fix, so it cannot yet be used in eScriptorium."
+    url: "https://htrmopo.inria.fr/models/10.5281-zenodo.24077352/cllg-ancient-greek-printed-edition-segmentation"
+    badge: "HTRMoPo"
+    icon: "model"
 
   - name: "CLLG-Scanner"
     description: "A local desktop app that converts scanned Ancient Greek and Latin editions (PDF, DjVu, images, ALTO) into structured TEI XML, using Kraken OCR. Nothing leaves your machine. Apache-2.0."

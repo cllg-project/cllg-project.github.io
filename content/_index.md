@@ -13,13 +13,13 @@ Access to ancient Greek texts is currently dominated by the *Thesaurus Linguae G
 
 The project operates along three major axes:
 
-- **Technological development** — OCR for polytonic Greek, layout analysis, and automatic TEI XML encoding.
-- **Corpus production** — High-quality, interoperable corpora structured in TEI XML, covering prose texts with canonical references.
+- **Technological development** — OCR/HTR for polytonic Greek (recognition and segmentation models for Kraken/eScriptorium), layout analysis, and automatic TEI XML encoding.
+- **Corpus production** — High-quality, interoperable corpora structured in TEI XML, including the Freed, Sources Chrétiennes and Nova corpora, extracted from the text layer of printed critical editions (main text only, with `pb` and `lb` for page and line breaks).
 - **Open distribution** — All data and tools are released under free licenses and published via Nakala, GitLab, GitHub and Zenodo.
 
 ## Legal Context
 
-The project operates within the framework established by French case law (*TGI, Droz v. Classiques Garnier*, 27 March 2014, confirmed on appeal 9 June 2017), which holds that the scholarly transcription of ancient texts does not constitute an original creative work protected by copyright, as the transcriber's choices are governed by scientific method rather than personal expression.
+The project operates within the framework established by French case law (*Garnier v. Droz*, Paris Court of Appeal, Pôle 5, 2nd Chamber, 9 June 2017, No. 16/00005; first instance *TGI*, 27 March 2014), which holds that the scholarly transcription of ancient texts does not constitute an original creative work protected by copyright, as the transcriber's choices are governed by scientific method rather than personal expression.
 
 ## Funding
 

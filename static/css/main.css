@@ -309,6 +309,11 @@ img { max-width: 100%; display: block; }
   color: #1a73e8;
 }
 .featured-card-header .resource-icon--zenodo { color: #1a73e8; }
+.featured-badge--model {
+  background: rgba(124,58,237,.12);
+  color: #7c3aed;
+}
+.featured-card-header .resource-icon--model { color: #7c3aed; }
 .featured-actions {
   display: flex;
   flex-wrap: wrap;

@@ -618,3 +618,12 @@ img { max-width: 100%; display: block; }
   .nav-links { gap: 1rem; }
   .hero-logo { width: 100px; height: 100px; }
 }
+
+.subsection-group {
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--text-muted, #6b7280);
+  margin: 1.5rem 0 .75rem;
+}

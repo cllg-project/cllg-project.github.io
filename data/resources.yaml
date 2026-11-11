@@ -66,17 +66,29 @@ repositories:
     description: "Primary source code and corpus data hosted at Inria."
     icon: "gitlab"
 
-# Software tools
+# Software tools, grouped by purpose
 software:
-  - name: "MyDapytains"
-    url: "https://github.com/distributed-text-services/MyDapytains"
-    description: "A ready-to-deploy DTS (Distributed Text Services) API server built on TEI structure, enabling standard programmatic access to corpus texts."
-    icon: "github"
-  - name: "HookTest"
-    url: "https://github.com/cllg-project/hooktest"
-    description: "Validation tool for TEI XML files with CiteStructure encoding and DTS catalog registries. Allows automated testing and reference retrieval without human intervention."
-    icon: "github"
-  - name: "Kraken-JS"
-    url: "https://github.com/cllg-project/kraken-js"
-    description: "JavaScript runtime for Kraken OCR/HTR models, running on Node.js and Electron without requiring Python at inference time. Includes segmentation, recognition, and a full end-to-end pipeline with WebGPU/CUDA support."
-    icon: "github"
+  - group: "Recognition & Layout"
+    items:
+      - name: "Kraken-JS"
+        url: "https://github.com/cllg-project/kraken-js"
+        description: "A partial port of Kraken inference to JavaScript, running Kraken OCR/HTR models on Node.js and Electron without requiring Python at inference time. Includes segmentation, recognition, and a full end-to-end pipeline with WebGPU/CUDA support. Apache-2.0."
+        icon: "github"
+
+  - group: "Text Processing & Encoding"
+    items:
+      - name: "Light Tagger"
+        url: "https://github.com/cllg-project/light-tagger"
+        description: "A light tagger finding notes, bibliographic citations and references (section, chapter, page, column, line locators) in running Greek and Latin text. A pair of linear-chain CRFs whose exact same model runs in Python and in pure JavaScript, with no native code or dependencies."
+        icon: "github"
+      - name: "HookTest"
+        url: "https://github.com/cllg-project/hooktest"
+        description: "Validation tool for TEI XML files with CiteStructure encoding and DTS catalog registries. Allows automated testing and reference retrieval without human intervention."
+        icon: "github"
+
+  - group: "Publication & Access"
+    items:
+      - name: "MyDapytains"
+        url: "https://github.com/distributed-text-services/MyDapytains"
+        description: "A ready-to-deploy DTS (Distributed Text Services) API server built on TEI structure, enabling standard programmatic access to corpus texts."
+        icon: "github"
